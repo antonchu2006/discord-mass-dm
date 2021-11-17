@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-import json
+import json, time
 
 bot = commands.Bot(command_prefix='?')
 
@@ -22,6 +22,7 @@ async def on_ready():
             print(f" [+] Sent message {indx} / {len(data)}")
         except Exception as e:
             print(f" [!] {e}")
+        time.sleep(2)
 
     print(" [+] Done")
 
