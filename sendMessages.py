@@ -22,7 +22,7 @@ async def on_ready():
             print(f" [+] Sent message {indx} / {len(data)}")
         except Exception as e:
             print(f" [!] {e}")
-        time.sleep(2)
+        time.sleep(10)
 
     print(" [+] Done")
 
